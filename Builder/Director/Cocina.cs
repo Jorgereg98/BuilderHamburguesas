@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Builder.Builder;
+using Builder.Models;
+
+namespace Builder.Director
+{
+    public class Cocina
+    {
+        private HamburguesaBuilder _hamburguesaBuilder;
+
+        public void AñadirProximaHamburguesa(HamburguesaBuilder hamburguesaBuilder)
+        {
+            _hamburguesaBuilder = hamburguesaBuilder;
+        }
+
+        public void CocinarHamburguesaPasoAPaso()
+        {
+            _hamburguesaBuilder.PasoAñadirIngredientes();
+            _hamburguesaBuilder.PasoAñadirPapas();
+        }
+
+        public Hamburguesa HamburguesaPreparada => _hamburguesaBuilder.ObtenerHamburguesa();
+
+        public Hamburguesa CocinarHamburguesa(HamburguesaBuilder hamburguesaBuilder)
+        {
+            hamburguesaBuilder.PasoAñadirIngredientes();
+            hamburguesaBuilder.PasoAñadirPapas();
+            return hamburguesaBuilder.ObtenerHamburguesa();
+        }
+    }
+}
