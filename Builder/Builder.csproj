@@ -45,13 +45,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builder\BaguetteArrachera.cs" />
+    <Compile Include="Builder\BaguetteBuilder.cs" />
+    <Compile Include="Builder\BaguetteJamon.cs" />
+    <Compile Include="Builder\BaguettePollo.cs" />
+    <Compile Include="Builder\BaguetteSalchicha.cs" />
+    <Compile Include="Builder\BaguetteVegetariano.cs" />
     <Compile Include="Builder\BigMacBuilder.cs" />
+    <Compile Include="Builder\ComidaBuilder.cs" />
     <Compile Include="Builder\CuartoDeLibraBuilder.cs" />
     <Compile Include="Builder\CuartoDeLibraDobleConQuesoBuilder.cs" />
     <Compile Include="Builder\DobleConQuesoBuilder.cs" />
     <Compile Include="Builder\HamburguesaBuilder.cs" />
     <Compile Include="Builder\McnificaBuilder.cs" />
     <Compile Include="Builder\McPolloBuilder.cs" />
+    <Compile Include="Builder\SandwichBuilder.cs" />
+    <Compile Include="Builder\SandwichJamon.cs" />
+    <Compile Include="Builder\SandwichPavo.cs" />
     <Compile Include="Builder\SencillaBuilder.cs" />
     <Compile Include="Builder\SencillaConQuesoBuilder.cs" />
     <Compile Include="Director\Cocina.cs" />
@@ -61,7 +71,13 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Baguette.cs" />
     <Compile Include="Models\Hamburguesa.cs" />
+    <Compile Include="Models\IComida.cs" />
+    <Compile Include="Models\Sandwich.cs" />
+    <Compile Include="Models\SandwichHuevo.cs" />
+    <Compile Include="Models\SandwichPasta.cs" />
+    <Compile Include="Models\SandwichPepperoni.cs" />
     <Compile Include="Models\TipoCarneEnum.cs" />
     <Compile Include="Models\TipoPanEnum.cs" />
     <Compile Include="Program.cs" />

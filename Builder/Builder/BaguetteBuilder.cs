@@ -7,14 +7,14 @@ using Builder.Models;
 
 namespace Builder.Builder
 {
-    public abstract class HamburguesaBuilder : ComidaBuilder
+    public abstract class BaguetteBuilder : ComidaBuilder
     {
-        protected Hamburguesa _hamburguesa;
+        protected Baguette _baguette;
 
         public string TipoCarne { get; set; }
         public string TipoPan { get; set; }
 
-        public Hamburguesa ObtenerHamburguesa() { return _hamburguesa; }
+        public Baguette ObtenerBaguette() { return _baguette; }
 
         public virtual void PasoAñadirIngredientes()
         {
@@ -30,7 +30,7 @@ namespace Builder.Builder
         {
             PasoAñadirIngredientes();
             PasoAñadirPapas();
-            return _hamburguesa;
+            return _baguette;
         }
     }
 }

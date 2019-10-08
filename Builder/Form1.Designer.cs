@@ -46,6 +46,14 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,7 +84,7 @@
             // button3
             // 
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(324, 42);
+            this.button3.Location = new System.Drawing.Point(12, 354);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(150, 150);
             this.button3.TabIndex = 2;
@@ -88,7 +96,7 @@
             // button4
             // 
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(480, 42);
+            this.button4.Location = new System.Drawing.Point(324, 42);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(150, 150);
             this.button4.TabIndex = 3;
@@ -124,7 +132,7 @@
             // button7
             // 
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(324, 198);
+            this.button7.Location = new System.Drawing.Point(168, 354);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(150, 150);
             this.button7.TabIndex = 6;
@@ -136,7 +144,7 @@
             // button8
             // 
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(480, 198);
+            this.button8.Location = new System.Drawing.Point(324, 198);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(150, 150);
             this.button8.TabIndex = 7;
@@ -151,15 +159,15 @@
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(30, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(281, 22);
+            this.label1.Size = new System.Drawing.Size(232, 22);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Agregue su hamburguesa a su orden";
+            this.label1.Text = "Agregue su platillo a su orden";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(30, 361);
+            this.label2.Location = new System.Drawing.Point(30, 522);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(140, 22);
             this.label2.TabIndex = 9;
@@ -172,11 +180,11 @@
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 386);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 547);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(618, 190);
+            this.dataGridView1.Size = new System.Drawing.Size(618, 96);
             this.dataGridView1.TabIndex = 10;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -184,7 +192,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(856, 55);
+            this.label3.Location = new System.Drawing.Point(994, 59);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(131, 22);
             this.label3.TabIndex = 11;
@@ -194,7 +202,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(985, 52);
+            this.label4.Location = new System.Drawing.Point(1123, 56);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 25);
             this.label4.TabIndex = 12;
@@ -205,7 +213,7 @@
             this.button9.BackColor = System.Drawing.Color.Red;
             this.button9.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.Yellow;
-            this.button9.Location = new System.Drawing.Point(847, 91);
+            this.button9.Location = new System.Drawing.Point(985, 95);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(185, 41);
             this.button9.TabIndex = 13;
@@ -215,40 +223,153 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(636, 42);
+            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
+            this.button10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button10.Location = new System.Drawing.Point(324, 354);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(150, 150);
             this.button10.TabIndex = 14;
-            this.button10.Text = "Próximamente";
+            this.button10.Text = "De Jamón";
+            this.button10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(636, 198);
+            this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
+            this.button11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button11.Location = new System.Drawing.Point(480, 42);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(150, 150);
             this.button11.TabIndex = 15;
-            this.button11.Text = "Próximamente";
+            this.button11.Text = "De Huevo";
+            this.button11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
             this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button12.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.Color.Yellow;
-            this.button12.Location = new System.Drawing.Point(847, 138);
+            this.button12.Location = new System.Drawing.Point(985, 142);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(185, 41);
             this.button12.TabIndex = 16;
-            this.button12.Text = "Eliminar hamburguesa";
+            this.button12.Text = "Eliminar platillo";
             this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button13
+            // 
+            this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
+            this.button13.Location = new System.Drawing.Point(480, 198);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(150, 150);
+            this.button13.TabIndex = 17;
+            this.button13.Text = "De Pasta";
+            this.button13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // button14
+            // 
+            this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
+            this.button14.Location = new System.Drawing.Point(480, 354);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(150, 150);
+            this.button14.TabIndex = 18;
+            this.button14.Text = "De Pepperoni";
+            this.button14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // button15
+            // 
+            this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
+            this.button15.Location = new System.Drawing.Point(636, 42);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(150, 150);
+            this.button15.TabIndex = 19;
+            this.button15.Text = "De Pavo";
+            this.button15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // button16
+            // 
+            this.button16.Image = ((System.Drawing.Image)(resources.GetObject("button16.Image")));
+            this.button16.Location = new System.Drawing.Point(636, 198);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(150, 150);
+            this.button16.TabIndex = 20;
+            this.button16.Text = "De Jamón";
+            this.button16.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
+            // button17
+            // 
+            this.button17.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button17.Image = ((System.Drawing.Image)(resources.GetObject("button17.Image")));
+            this.button17.Location = new System.Drawing.Point(636, 354);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(150, 150);
+            this.button17.TabIndex = 21;
+            this.button17.Text = "De Pollo";
+            this.button17.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
+            // button18
+            // 
+            this.button18.Image = ((System.Drawing.Image)(resources.GetObject("button18.Image")));
+            this.button18.Location = new System.Drawing.Point(792, 42);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(150, 150);
+            this.button18.TabIndex = 22;
+            this.button18.Text = "De Salchicha";
+            this.button18.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
+            // button19
+            // 
+            this.button19.Image = ((System.Drawing.Image)(resources.GetObject("button19.Image")));
+            this.button19.Location = new System.Drawing.Point(792, 198);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(150, 150);
+            this.button19.TabIndex = 23;
+            this.button19.Text = "Vegetariano";
+            this.button19.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
+            // button20
+            // 
+            this.button20.Image = ((System.Drawing.Image)(resources.GetObject("button20.Image")));
+            this.button20.Location = new System.Drawing.Point(792, 354);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(150, 150);
+            this.button20.TabIndex = 24;
+            this.button20.Text = "De Arrachera";
+            this.button20.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1066, 594);
+            this.ClientSize = new System.Drawing.Size(1355, 667);
+            this.Controls.Add(this.button20);
+            this.Controls.Add(this.button19);
+            this.Controls.Add(this.button18);
+            this.Controls.Add(this.button17);
+            this.Controls.Add(this.button16);
+            this.Controls.Add(this.button15);
+            this.Controls.Add(this.button14);
+            this.Controls.Add(this.button13);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
@@ -293,5 +414,13 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button20;
     }
 }

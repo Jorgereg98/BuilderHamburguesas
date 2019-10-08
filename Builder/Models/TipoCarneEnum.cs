@@ -8,6 +8,6 @@ namespace Builder.Models
 {
     public enum TipoCarneEnum
     {
-        Res, Pollo, Doble_Res
+        Res, Pollo, Doble_Res, Sin_Carne, Jamon, Pavo, Pepperoni, Salchicha, Arrachera
     }
 }

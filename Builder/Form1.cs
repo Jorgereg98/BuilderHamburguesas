@@ -15,7 +15,7 @@ namespace Builder
 {
     public partial class Form1 : Form
     {
-        List<Hamburguesa> lista = new List<Hamburguesa>();
+        List<IComida> lista = new List<IComida>();
 
         public Form1()
         {
@@ -57,11 +57,14 @@ namespace Builder
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            var cocina = new Cocina();
-            Hamburguesa hamburguesa = hamburguesa = cocina.CocinarHamburguesa(new SencillaBuilder(TipoPanEnum.Sin_Semilla, TipoCarneEnum.Res)); //20
+            var comida = new SencillaBuilder(TipoPanEnum.Sin_Semilla, TipoCarneEnum.Res);
+            var hamburguesa = comida.Cocinar();
             hamburguesa.IngredientesString = string.Join(",", hamburguesa.Ingredientes.ToArray());
-            
+
+            //var cocina = new Cocina();
+            //Hamburguesa hamburguesa = hamburguesa = cocina.CocinarHamburguesa(new SencillaBuilder(TipoPanEnum.Sin_Semilla, TipoCarneEnum.Res)); //20
+            //hamburguesa.IngredientesString = string.Join(",", hamburguesa.Ingredientes.ToArray());
+
             lista.Add(hamburguesa);
 
             MessageBox.Show("Hamburguesa " + hamburguesa.Nombre + " agregada con éxito.");
@@ -75,9 +78,13 @@ namespace Builder
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var cocina = new Cocina();
-            Hamburguesa hamburguesa = cocina.CocinarHamburguesa(new SencillaConQuesoBuilder(TipoPanEnum.Sin_Semilla, TipoCarneEnum.Res)); //25
+            var comida = new SencillaConQuesoBuilder(TipoPanEnum.Sin_Semilla, TipoCarneEnum.Res);
+            var hamburguesa = comida.Cocinar();
             hamburguesa.IngredientesString = string.Join(",", hamburguesa.Ingredientes.ToArray());
+
+            //var cocina = new Cocina();
+            //Hamburguesa hamburguesa = cocina.CocinarHamburguesa(new SencillaConQuesoBuilder(TipoPanEnum.Sin_Semilla, TipoCarneEnum.Res)); //25
+            //hamburguesa.IngredientesString = string.Join(",", hamburguesa.Ingredientes.ToArray());
 
             lista.Add(hamburguesa);
             MessageBox.Show("Hamburguesa "+ hamburguesa.Nombre +" agregada con éxito.");
@@ -92,9 +99,13 @@ namespace Builder
 
         private void button3_Click(object sender, EventArgs e)
         {
-            var cocina = new Cocina();
-            Hamburguesa hamburguesa = cocina.CocinarHamburguesa(new McPolloBuilder(TipoPanEnum.Con_Semilla, TipoCarneEnum.Pollo)); //30
+            var comida = new McPolloBuilder(TipoPanEnum.Con_Semilla, TipoCarneEnum.Pollo);
+            var hamburguesa = comida.Cocinar();
             hamburguesa.IngredientesString = string.Join(",", hamburguesa.Ingredientes.ToArray());
+
+            //var cocina = new Cocina();
+            //Hamburguesa hamburguesa = cocina.CocinarHamburguesa(new McPolloBuilder(TipoPanEnum.Con_Semilla, TipoCarneEnum.Pollo)); //30
+            //hamburguesa.IngredientesString = string.Join(",", hamburguesa.Ingredientes.ToArray());
 
             lista.Add(hamburguesa);
             MessageBox.Show("Hamburguesa " + hamburguesa.Nombre + " agregada con éxito.");
@@ -108,9 +119,13 @@ namespace Builder
 
         private void button4_Click(object sender, EventArgs e)
         {
-            var cocina = new Cocina();
-            Hamburguesa hamburguesa = cocina.CocinarHamburguesa(new DobleConQuesoBuilder(TipoPanEnum.Sin_Semilla, TipoCarneEnum.Doble_Res)); //45
+            var comida = new DobleConQuesoBuilder(TipoPanEnum.Sin_Semilla, TipoCarneEnum.Doble_Res);
+            var hamburguesa = comida.Cocinar();
             hamburguesa.IngredientesString = string.Join(",", hamburguesa.Ingredientes.ToArray());
+
+            //var cocina = new Cocina();
+            //Hamburguesa hamburguesa = cocina.CocinarHamburguesa(new DobleConQuesoBuilder(TipoPanEnum.Sin_Semilla, TipoCarneEnum.Doble_Res)); //45
+            //hamburguesa.IngredientesString = string.Join(",", hamburguesa.Ingredientes.ToArray());
 
             lista.Add(hamburguesa);
             MessageBox.Show("Hamburguesa " + hamburguesa.Nombre + " agregada con éxito.");
@@ -124,9 +139,13 @@ namespace Builder
 
         private void button5_Click(object sender, EventArgs e)
         {
-            var cocina = new Cocina();
-            Hamburguesa hamburguesa = cocina.CocinarHamburguesa(new CuartoDeLibraBuilder(TipoPanEnum.Con_Semilla, TipoCarneEnum.Res)); //45
+            var comida = new CuartoDeLibraBuilder(TipoPanEnum.Con_Semilla, TipoCarneEnum.Res);
+            var hamburguesa = comida.Cocinar();
             hamburguesa.IngredientesString = string.Join(",", hamburguesa.Ingredientes.ToArray());
+
+            //var cocina = new Cocina();
+            //Hamburguesa hamburguesa = cocina.CocinarHamburguesa(new CuartoDeLibraBuilder(TipoPanEnum.Con_Semilla, TipoCarneEnum.Res)); //45
+            //hamburguesa.IngredientesString = string.Join(",", hamburguesa.Ingredientes.ToArray());
 
             lista.Add(hamburguesa);
             MessageBox.Show("Hamburguesa " + hamburguesa.Nombre + " agregada con éxito.");
@@ -140,9 +159,13 @@ namespace Builder
 
         private void button6_Click(object sender, EventArgs e)
         {
-            var cocina = new Cocina();
-            Hamburguesa hamburguesa = cocina.CocinarHamburguesa(new McnificaBuilder(TipoPanEnum.Con_Semilla, TipoCarneEnum.Res)); //50
+            var comida = new McnificaBuilder(TipoPanEnum.Con_Semilla, TipoCarneEnum.Res);
+            var hamburguesa = comida.Cocinar();
             hamburguesa.IngredientesString = string.Join(",", hamburguesa.Ingredientes.ToArray());
+
+            //var cocina = new Cocina();
+            //Hamburguesa hamburguesa = cocina.CocinarHamburguesa(new McnificaBuilder(TipoPanEnum.Con_Semilla, TipoCarneEnum.Res)); //50
+            //hamburguesa.IngredientesString = string.Join(",", hamburguesa.Ingredientes.ToArray());
 
             lista.Add(hamburguesa);
             MessageBox.Show("Hamburguesa " + hamburguesa.Nombre + " agregada con éxito.");
@@ -156,9 +179,13 @@ namespace Builder
 
         private void button7_Click(object sender, EventArgs e)
         {
-            var cocina = new Cocina();
-            Hamburguesa hamburguesa = cocina.CocinarHamburguesa(new CuartoDeLibraDobleConQuesoBuilder(TipoPanEnum.Con_Semilla, TipoCarneEnum.Doble_Res)); //65
+            var comida = new CuartoDeLibraDobleConQuesoBuilder(TipoPanEnum.Con_Semilla, TipoCarneEnum.Doble_Res);
+            var hamburguesa = comida.Cocinar();
             hamburguesa.IngredientesString = string.Join(",", hamburguesa.Ingredientes.ToArray());
+
+            //var cocina = new Cocina();
+            //Hamburguesa hamburguesa = cocina.CocinarHamburguesa(new CuartoDeLibraDobleConQuesoBuilder(TipoPanEnum.Con_Semilla, TipoCarneEnum.Doble_Res)); //65
+            //hamburguesa.IngredientesString = string.Join(",", hamburguesa.Ingredientes.ToArray());
 
             lista.Add(hamburguesa);
             MessageBox.Show("Hamburguesa " + hamburguesa.Nombre + " agregada con éxito.");
@@ -172,9 +199,13 @@ namespace Builder
 
         private void button8_Click(object sender, EventArgs e)
         {
-            var cocina = new Cocina();
-            Hamburguesa hamburguesa = cocina.CocinarHamburguesa(new BigMacBuilder(TipoPanEnum.Con_Semilla, TipoCarneEnum.Doble_Res)); //80
+            var comida = new BigMacBuilder(TipoPanEnum.Con_Semilla, TipoCarneEnum.Doble_Res);
+            var hamburguesa = comida.Cocinar();
             hamburguesa.IngredientesString = string.Join(",", hamburguesa.Ingredientes.ToArray());
+
+            //var cocina = new Cocina();
+            //Hamburguesa hamburguesa = cocina.CocinarHamburguesa(new BigMacBuilder(TipoPanEnum.Con_Semilla, TipoCarneEnum.Doble_Res)); //80
+            //hamburguesa.IngredientesString = string.Join(",", hamburguesa.Ingredientes.ToArray());
 
             lista.Add(hamburguesa);
             MessageBox.Show("Hamburguesa " + hamburguesa.Nombre + " agregada con éxito.");
@@ -208,7 +239,7 @@ namespace Builder
                 MessageBox.Show("Orden cancelada.");
             }
             
-            lista = new List<Hamburguesa>();
+            lista = new List<IComida>();
             var source = new BindingSource(lista, null);
             dataGridView1.DataSource = source;
             Ajustar();
@@ -235,6 +266,170 @@ namespace Builder
                 MessageBox.Show("No tiene ninguna hamburguesa en su pedido.");
             }
             
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
+            var comida = new SandwichJamon(TipoPanEnum.Blanco, TipoCarneEnum.Jamon);
+            var sandwich = comida.Cocinar();
+            sandwich.IngredientesString = string.Join(",", sandwich.Ingredientes.ToArray());
+
+            lista.Add(sandwich);
+            MessageBox.Show("Sandwich " + sandwich.Nombre + " agregado con éxito.");
+
+            var source = new BindingSource(lista, null);
+            dataGridView1.DataSource = source;
+
+            Ajustar();
+            ActualizarPrecio();
+
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            var comida = new SandwichHuevo(TipoPanEnum.Blanco, TipoCarneEnum.Sin_Carne);
+            var sandwich = comida.Cocinar();
+            sandwich.IngredientesString = string.Join(",", sandwich.Ingredientes.ToArray());
+
+            lista.Add(sandwich);
+            MessageBox.Show("Sandwich " + sandwich.Nombre + " agregado con éxito.");
+
+            var source = new BindingSource(lista, null);
+            dataGridView1.DataSource = source;
+
+            Ajustar();
+            ActualizarPrecio();
+
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            var comida = new SandwichPasta(TipoPanEnum.Integral, TipoCarneEnum.Sin_Carne);
+            var sandwich = comida.Cocinar();
+            sandwich.IngredientesString = string.Join(",", sandwich.Ingredientes.ToArray());
+
+            lista.Add(sandwich);
+            MessageBox.Show("Sandwich " + sandwich.Nombre + " agregado con éxito.");
+
+            var source = new BindingSource(lista, null);
+            dataGridView1.DataSource = source;
+
+            Ajustar();
+            ActualizarPrecio();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            var comida = new SandwichPepperoni(TipoPanEnum.Blanco, TipoCarneEnum.Pepperoni);
+            var sandwich = comida.Cocinar();
+            sandwich.IngredientesString = string.Join(",", sandwich.Ingredientes.ToArray());
+
+            lista.Add(sandwich);
+            MessageBox.Show("Sandwich " + sandwich.Nombre + " agregado con éxito.");
+
+            var source = new BindingSource(lista, null);
+            dataGridView1.DataSource = source;
+
+            Ajustar();
+            ActualizarPrecio();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            var comida = new SandwichPavo(TipoPanEnum.Integral, TipoCarneEnum.Pavo);
+            var sandwich = comida.Cocinar();
+            sandwich.IngredientesString = string.Join(",", sandwich.Ingredientes.ToArray());
+
+            lista.Add(sandwich);
+            MessageBox.Show("Sandwich " + sandwich.Nombre + " agregado con éxito.");
+
+            var source = new BindingSource(lista, null);
+            dataGridView1.DataSource = source;
+
+            Ajustar();
+            ActualizarPrecio();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            var comida = new BaguetteJamon(TipoPanEnum.Blanco, TipoCarneEnum.Jamon);
+            var baguette = comida.Cocinar();
+            baguette.IngredientesString = string.Join(",", baguette.Ingredientes.ToArray());
+
+            lista.Add(baguette);
+            MessageBox.Show("Baguette " + baguette.Nombre + " agregado con éxito.");
+
+            var source = new BindingSource(lista, null);
+            dataGridView1.DataSource = source;
+
+            Ajustar();
+            ActualizarPrecio();
+
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            var comida = new BaguettePollo(TipoPanEnum.Blanco, TipoCarneEnum.Pollo);
+            var baguette = comida.Cocinar();
+            baguette.IngredientesString = string.Join(",", baguette.Ingredientes.ToArray());
+
+            lista.Add(baguette);
+            MessageBox.Show("Baguette " + baguette.Nombre + " agregado con éxito.");
+
+            var source = new BindingSource(lista, null);
+            dataGridView1.DataSource = source;
+
+            Ajustar();
+            ActualizarPrecio();
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            var comida = new BaguetteSalchicha(TipoPanEnum.Blanco, TipoCarneEnum.Salchicha);
+            var baguette = comida.Cocinar();
+            baguette.IngredientesString = string.Join(",", baguette.Ingredientes.ToArray());
+
+            lista.Add(baguette);
+            MessageBox.Show("Baguette " + baguette.Nombre + " agregado con éxito.");
+
+            var source = new BindingSource(lista, null);
+            dataGridView1.DataSource = source;
+
+            Ajustar();
+            ActualizarPrecio();
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            var comida = new BaguetteVegetariano(TipoPanEnum.Integral, TipoCarneEnum.Sin_Carne);
+            var baguette = comida.Cocinar();
+            baguette.IngredientesString = string.Join(",", baguette.Ingredientes.ToArray());
+
+            lista.Add(baguette);
+            MessageBox.Show("Baguette " + baguette.Nombre + " agregado con éxito.");
+
+            var source = new BindingSource(lista, null);
+            dataGridView1.DataSource = source;
+
+            Ajustar();
+            ActualizarPrecio();
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            var comida = new BaguetteArrachera(TipoPanEnum.Blanco, TipoCarneEnum.Arrachera);
+            var baguette = comida.Cocinar();
+            baguette.IngredientesString = string.Join(",", baguette.Ingredientes.ToArray());
+
+            lista.Add(baguette);
+            MessageBox.Show("Baguette " + baguette.Nombre + " agregado con éxito.");
+
+            var source = new BindingSource(lista, null);
+            dataGridView1.DataSource = source;
+
+            Ajustar();
+            ActualizarPrecio();
         }
     }
 }
